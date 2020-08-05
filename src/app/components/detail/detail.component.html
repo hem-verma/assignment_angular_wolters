@@ -1,0 +1,9 @@
+<div class='card_container'*ngIf="eventDetails as event">
+    <div class="card"><h2>Event Details</h2></div>
+    <div class="card">Event Id : {{ event.id }}</div>
+    <div class="card">Event Description : {{ event.description }}</div>
+    <div class="card">Event Type : {{ event.eventType }}</div>
+    <div class="card">Event Date : {{ event.eventDate }}</div>
+    <div class="card">Event Customer Name : {{ event.customerName }}</div>
+    <a routerLink="/list" routerLinkActive="active">Go Back</a>               
+</div>
